@@ -1,100 +1,187 @@
-<!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ASHVEX — Assistant IA WhatsApp</title>
-    <meta
-      name="description"
-      content="ASHVEX aide les services locaux à répondre plus vite sur WhatsApp, qualifier les demandes, préparer les devis et relancer les prospects."
-    />
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap');
-      * { box-sizing: border-box; }
-      body { margin: 0; background: #0a0a0a; color: #fafaf8; font-family: Helvetica, Arial, sans-serif; }
-      header { display: flex; justify-content: space-between; align-items: center; padding: 24px 7vw; border-bottom: 1px solid #ffffff18; position: sticky; top: 0; background: #0a0a0aee; backdrop-filter: blur(8px); }
-      .logo, h1, h2 { font-family: 'Bebas Neue', Impact, sans-serif; letter-spacing: .08em; }
-      .logo { font-size: 34px; }
-      nav a { color: #fafaf8; text-decoration: none; letter-spacing: .25em; font-size: 12px; }
-      .hero { min-height: 78vh; display: grid; place-items: center; text-align: center; padding: 70px 7vw; background: radial-gradient(circle at 20% 20%, #ffffff10, transparent 34%), radial-gradient(circle at 80% 80%, #ffffff0a, transparent 34%); }
-      .eyebrow { color: #8a8a85; letter-spacing: .38em; font-size: 12px; text-transform: uppercase; }
-      h1 { font-size: clamp(74px, 20vw, 190px); line-height: .85; margin: 22px 0; }
-      .sub { max-width: 760px; margin: 0 auto; color: #d6d6d0; font: italic 24px/1.45 'Cormorant Garamond', Georgia, serif; }
-      .actions { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 34px; }
-      .btn { display: inline-block; padding: 15px 22px; text-decoration: none; text-transform: uppercase; letter-spacing: .14em; font-weight: 700; font-size: 12px; }
-      .btn.primary { background: #fafaf8; color: #0a0a0a; }
-      .btn.secondary { color: #fafaf8; border: 1px solid #ffffff40; }
-      section { padding: 74px 7vw; border-top: 1px solid #ffffff14; }
-      .section-head { max-width: 820px; margin: 0 auto 34px; text-align: center; }
-      h2 { font-size: clamp(42px, 9vw, 74px); line-height: .95; margin: 14px 0; }
-      .text { color: #c9c9c5; font: 21px/1.55 'Cormorant Garamond', Georgia, serif; }
-      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1px; background: #ffffff18; border: 1px solid #ffffff18; max-width: 1100px; margin: 0 auto; }
-      .card { background: #0a0a0a; padding: 28px; min-height: 190px; }
-      .num { color: #8a8a85; font-size: 12px; letter-spacing: .18em; }
-      .card h3 { margin: 34px 0 10px; text-transform: uppercase; letter-spacing: .12em; }
-      .card p { color: #c9c9c5; font: 18px/1.5 'Cormorant Garamond', Georgia, serif; }
-      .price { max-width: 860px; margin: 0 auto; padding: 36px; border: 1px solid #ffffff24; background: #141412; text-align: center; }
-      footer { padding: 24px 7vw; border-top: 1px solid #ffffff18; color: #8a8a85; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="logo">ASHVEX</div>
-      <nav><a href="https://wa.me/50940712070?text=Bonjour%20Ashvex%2C%20je%20veux%20voir%20une%20demo%20de%20l%27assistant%20IA%20WhatsApp.">Contact</a></nav>
-    </header>
-
-    <main>
-      <div class="hero">
-        <div>
-          <div class="eyebrow">Business 2026 — service B2B recurrent</div>
-          <h1>ASHVEX</h1>
-          <p class="sub">Un assistant IA WhatsApp pour les petites entreprises de service qui perdent des clients parce qu'elles répondent trop tard.</p>
-          <div class="actions">
-            <a class="btn primary" href="https://wa.me/50940712070?text=Bonjour%20Ashvex%2C%20je%20veux%20voir%20une%20demo%20de%20l%27assistant%20IA%20WhatsApp.">Demander une demo</a>
-            <a class="btn secondary" href="#plan">Voir le plan 5k/mois</a>
-          </div>
-        </div>
-      </div>
-
-      <section>
-        <div class="section-head">
-          <div class="eyebrow">Probleme reel</div>
-          <h2>Les services locaux vivent dans WhatsApp, mais repondent trop lentement.</h2>
-          <p class="text">ASHVEX pose les bonnes questions, qualifie le client, prépare le devis et relance automatiquement avant que le prospect appelle un concurrent.</p>
-        </div>
-        <div class="grid">
-          <div class="card"><span class="num">01</span><h3>Reponse instantanee</h3><p>Le prospect reçoit une réponse claire le soir, le week-end ou pendant que l'entreprise travaille.</p></div>
-          <div class="card"><span class="num">02</span><h3>Lead qualifie</h3><p>Ville, urgence, budget, photos, disponibilité et besoin exact sont collectés automatiquement.</p></div>
-          <div class="card"><span class="num">03</span><h3>Relance auto</h3><p>Les clients qui hésitent sont relancés doucement pour augmenter les rendez-vous.</p></div>
-        </div>
-      </section>
-
-      <section>
-        <div class="section-head">
-          <div class="eyebrow">Niches a attaquer</div>
-          <h2>Commence par les metiers ou chaque lead vaut cher.</h2>
-        </div>
-        <div class="grid">
-          <div class="card"><span class="num">Cible</span><h3>Plombiers</h3><p>Urgences perdues car personne ne répond assez vite.</p></div>
-          <div class="card"><span class="num">Cible</span><h3>Nettoyage Airbnb</h3><p>Planning, photos et devis dispersés dans les messages.</p></div>
-          <div class="card"><span class="num">Cible</span><h3>Reparation mobile</h3><p>Clients qui veulent un prix clair avant de se déplacer.</p></div>
-          <div class="card"><span class="num">Cible</span><h3>Coachs & salons</h3><p>Rendez-vous oubliés et demandes répétitives.</p></div>
-        </div>
-      </section>
-
-      <section id="plan">
-        <div class="price">
-          <div class="eyebrow">Modele 5k/mois</div>
-          <h2>20 clients a 250€/mois = 5 000€/mois.</h2>
-          <p class="text">Offre simple : 497€ d'installation, puis 149€ à 299€/mois selon le volume. Peu d'inventaire, marge élevée, amélioration continue avec chaque conversation réelle.</p>
-          <div class="actions"><a class="btn primary" href="https://wa.me/50940712070?text=Bonjour%20Ashvex%2C%20je%20veux%20lancer%20l%27offre%20IA%20WhatsApp.">Lancer Ashvex</a></div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <span>ASHVEX — Automatisation WhatsApp</span>
-      <span>Devis qualifies · Relances · Rendez-vous</span>
-    </footer>
-  </body>
-</html>
+diff --git a/index.html b/index.html
+index f3f7a2cfab3f46cd905287c1d32d4516b05be4a0..b3a2c373e534f8bef1db4139767d31312b4b4f84 100644
+--- a/index.html
++++ b/index.html
+@@ -1,12 +1,179 @@
+ <!doctype html>
+ <html lang="fr">
+   <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+-    <title>ASHVEX — Maison de luxe streetwear</title>
++    <title>ASHVEX FamilyDesk — assistant familial anti-paperasse</title>
++    <meta
++      name="description"
++      content="Ashvex FamilyDesk aide les familles occupées à gérer la paperasse, les portails en ligne, rendez-vous et rappels de leurs parents âgés, sans remplacer un médecin ni un avocat."
++    />
++    <style>
++      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
++      * { box-sizing: border-box; }
++      :root { --bg:#07100d; --panel:#0f1b17; --panel2:#14231e; --text:#f7fff9; --muted:#a8b8af; --line:#294039; --mint:#62f2b6; --gold:#ffd36b; --coral:#ff8a7a; --blue:#9db7ff; }
++      html { scroll-behavior:smooth; }
++      body { margin:0; background: radial-gradient(circle at top left,#19382d 0,#07100d 36%); color:var(--text); font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif; }
++      a { color:inherit; }
++      .wrap { width:min(1120px,calc(100% - 34px)); margin:0 auto; }
++      header { position:sticky; top:0; z-index:10; background:rgba(7,16,13,.9); backdrop-filter:blur(14px); border-bottom:1px solid var(--line); }
++      .nav { min-height:74px; display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 0; }
++      .brand { font-weight:900; letter-spacing:.2em; font-size:20px; }
++      .navlinks { display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
++      .navlinks a { text-decoration:none; color:var(--muted); font-size:13px; font-weight:800; }
++      .chip { display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border:1px solid var(--line); background:#0b1713; border-radius:999px; color:var(--muted); font-size:13px; font-weight:800; }
++      .hero { padding:78px 0 58px; }
++      .hero-grid { display:grid; grid-template-columns:1.02fr .98fr; gap:30px; align-items:center; }
++      h1 { font-size:clamp(42px,8vw,76px); line-height:.92; letter-spacing:-.07em; margin:18px 0; }
++      h2 { font-size:clamp(32px,5.5vw,56px); line-height:.98; letter-spacing:-.055em; margin:0 0 14px; }
++      h3 { margin:0 0 9px; font-size:18px; }
++      p { color:var(--muted); line-height:1.7; }
++      .lead { font-size:19px; max-width:710px; }
++      .mint { color:var(--mint); } .gold { color:var(--gold); } .coral { color:var(--coral); }
++      .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
++      .btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:15px 18px; border-radius:14px; font-weight:900; text-decoration:none; border:1px solid transparent; }
++      .btn-primary { background:var(--mint); color:#03120c; }
++      .btn-secondary { border-color:var(--line); background:#0b1713; color:var(--text); }
++      .desk { background:linear-gradient(180deg,#14251f,#0a1411); border:1px solid var(--line); border-radius:30px; padding:18px; box-shadow:0 26px 80px rgba(0,0,0,.35); }
++      .screen { background:#07100d; border:1px solid #345147; border-radius:24px; padding:16px; }
++      .task { display:flex; justify-content:space-between; gap:12px; align-items:center; padding:13px; border:1px solid var(--line); border-radius:16px; background:#101d19; margin:10px 0; }
++      .badge { padding:7px 10px; border-radius:999px; font-size:12px; font-weight:900; }
++      .todo { background:rgba(255,211,107,.14); color:#ffe2a0; } .done { background:rgba(98,242,182,.13); color:#b7ffd9; }
++      .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:12px; }
++      .stat { background:#101d19; border:1px solid var(--line); border-radius:16px; padding:12px; }
++      .stat strong { display:block; font-size:21px; color:var(--gold); }
++      section { padding:56px 0; border-top:1px solid var(--line); }
++      .section-head { display:flex; justify-content:space-between; gap:24px; align-items:end; margin-bottom:24px; }
++      .section-head p { max-width:580px; margin:0; }
++      .tag { color:var(--blue); text-transform:uppercase; letter-spacing:.14em; font-size:12px; font-weight:900; }
++      .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
++      .card { background:var(--panel); border:1px solid var(--line); border-radius:24px; padding:22px; }
++      .steps { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
++      .step { background:var(--panel); border:1px solid var(--line); border-radius:22px; padding:20px; }
++      .num { width:42px; height:42px; display:grid; place-items:center; border-radius:50%; background:#1b3028; color:var(--gold); font-weight:900; margin-bottom:18px; }
++      .pricing { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
++      .price { font-size:42px; font-weight:900; letter-spacing:-.06em; color:var(--mint); margin:10px 0; }
++      ul { list-style:none; padding:0; margin:16px 0 0; display:grid; gap:10px; color:#dcebe3; }
++      li::before { content:'✓'; color:var(--mint); font-weight:900; margin-right:9px; }
++      .truth { background:rgba(255,211,107,.1); border:1px solid rgba(255,211,107,.34); border-radius:24px; padding:24px; }
++      footer { border-top:1px solid var(--line); padding:30px 0; color:var(--muted); }
++      @media(max-width:850px){ .hero-grid,.cards,.steps,.pricing{grid-template-columns:1fr;} .section-head{display:block;} .stats{grid-template-columns:1fr;} .nav{align-items:flex-start;} }
++    </style>
+   </head>
+   <body>
+-    <div id="root"></div>
+-    <script type="module" src="/main.jsx"></script>
++    <header>
++      <div class="wrap nav">
++        <div class="brand">ASHVEX</div>
++        <nav class="navlinks">
++          <a href="#probleme">Problème</a>
++          <a href="#solution">Solution</a>
++          <a href="#plan">Plan</a>
++          <a href="#prix">Prix</a>
++          <a class="chip" href="https://wa.me/50940712070?text=Bonjour%20Ashvex%2C%20je%20veux%20comprendre%20FamilyDesk.">WhatsApp</a>
++        </nav>
++      </div>
++    </header>
++
++    <main>
++      <section class="hero">
++        <div class="wrap hero-grid">
++          <div>
++            <span class="chip">Business inventé pour débutant: service + confiance + IA</span>
++            <h1>ASHVEX <span class="mint">FamilyDesk</span>: le bureau digital pour familles qui s’occupent d’un parent âgé.</h1>
++            <p class="lead">Les enfants adultes sont débordés: portails en ligne, mots de passe, rendez-vous, formulaires, assurances, rappels et documents. FamilyDesk ne vend pas “une IA”. Il vend du soulagement et de l’organisation.</p>
++            <div class="actions">
++              <a class="btn btn-primary" href="https://wa.me/50940712070?text=Bonjour%20Ashvex%2C%20je%20veux%20une%20demo%20FamilyDesk.">Demander une démo</a>
++              <a class="btn btn-secondary" href="#probleme">Voir le problème</a>
++            </div>
++          </div>
++          <div class="desk" aria-label="Tableau familial FamilyDesk">
++            <div class="screen">
++              <div class="task"><div><strong>Portail assurance</strong><br><span>Document à télécharger avant vendredi</span></div><span class="badge todo">À faire</span></div>
++              <div class="task"><div><strong>Rendez-vous cardiologue</strong><br><span>SMS rappel envoyé à maman + fils</span></div><span class="badge done">OK</span></div>
++              <div class="task"><div><strong>Facture pharmacie</strong><br><span>Classée dans dossier mensuel</span></div><span class="badge done">OK</span></div>
++              <div class="task"><div><strong>Login oublié</strong><br><span>Procédure de récupération guidée</span></div><span class="badge todo">Urgent</span></div>
++              <div class="stats">
++                <div class="stat"><strong>1 lieu</strong><span>documents</span></div>
++                <div class="stat"><strong>0 oubli</strong><span>rappels</span></div>
++                <div class="stat"><strong>+ calme</strong><span>famille</span></div>
++              </div>
++            </div>
++          </div>
++        </div>
++      </section>
++
++      <section id="probleme">
++        <div class="wrap">
++          <div class="section-head">
++            <div><span class="tag">Vrai problème 2026</span><h2>Tout devient digital, mais beaucoup de parents âgés n’arrivent pas à suivre.</h2></div>
++            <p>Les enfants doivent gérer à distance: portails, rendez-vous, formulaires, documents, rappels, appels et mots de passe. Ce n’est pas sexy, mais c’est douloureux et répétitif.</p>
++          </div>
++          <div class="cards">
++            <div class="card"><span class="tag">Douleur</span><h3>La famille est perdue</h3><p>Chaque organisme a son portail, son mot de passe, son formulaire et ses délais.</p></div>
++            <div class="card"><span class="tag">Pourquoi ils paient</span><h3>Ils manquent de temps</h3><p>Les enfants travaillent, vivent loin, ou ne peuvent pas passer des heures au téléphone.</p></div>
++            <div class="card"><span class="tag">Pourquoi pas IA seule</span><h3>Il faut agir, pas juste écrire</h3><p>L’IA peut expliquer, mais ne range pas les preuves, ne rappelle pas la famille, ne suit pas les échéances.</p></div>
++          </div>
++        </div>
++      </section>
++
++      <section id="solution">
++        <div class="wrap">
++          <div class="section-head">
++            <div><span class="tag">Solution inventée</span><h2>Un assistant familial qui transforme la paperasse en tableau simple.</h2></div>
++            <p>FamilyDesk est un service mensuel: tu aides la famille à centraliser, suivre et préparer les tâches administratives. Tu ne donnes pas d’avis médical ou légal; tu organises.</p>
++          </div>
++          <div class="cards">
++            <div class="card"><span class="tag">Centraliser</span><h3>Documents et accès</h3><p>Liste des portails, contacts, dates, documents importants et procédures.</p></div>
++            <div class="card"><span class="tag">Suivre</span><h3>Rappels et échéances</h3><p>Rendez-vous, renouvellements, formulaires, factures et tâches à confirmer.</p></div>
++            <div class="card"><span class="tag">Préparer</span><h3>Messages et dossiers</h3><p>Emails, checklists, résumés d’appel, dossiers à envoyer aux organismes.</p></div>
++          </div>
++        </div>
++      </section>
++
++      <section id="plan">
++        <div class="wrap">
++          <div class="section-head">
++            <div><span class="tag">Comment commencer</span><h2>Tu peux lancer sans coder.</h2></div>
++            <p>Au début, tu utilises WhatsApp, Google Drive, Google Calendar, Notion/Airtable et des modèles. Ensuite seulement tu automatises.</p>
++          </div>
++          <div class="steps">
++            <div class="step"><div class="num">1</div><h3>Niche</h3><p>Adultes 30-55 ans qui aident un parent âgé à distance.</p></div>
++            <div class="step"><div class="num">2</div><h3>Audit</h3><p>Appel de 30 minutes: “où sont vos documents, mots de passe, rendez-vous ?”</p></div>
++            <div class="step"><div class="num">3</div><h3>Setup</h3><p>Tu crées le tableau familial, les rappels et le dossier partagé.</p></div>
++            <div class="step"><div class="num">4</div><h3>Mensuel</h3><p>Tu fais le suivi, rappels, classement, préparation de documents.</p></div>
++          </div>
++        </div>
++      </section>
++
++      <section id="prix">
++        <div class="wrap pricing">
++          <div class="card">
++            <span class="tag">Objectif 5k/mois</span>
++            <div class="price">34 familles × 149€ = 5 066€</div>
++            <p>Tu n’as pas besoin de milliers de clients. Tu as besoin de familles qui paient pour réduire le stress et éviter les oublis.</p>
++          </div>
++          <div class="card">
++            <span class="tag">Offre simple</span>
++            <ul>
++              <li>Setup familial: 299€ à 599€</li>
++              <li>Suivi mensuel: 99€ à 199€/mois</li>
++              <li>Pack urgence paperasse: 79€ à 149€</li>
++              <li>Option bilingue / diaspora / créole-français</li>
++            </ul>
++          </div>
++        </div>
++      </section>
++
++      <section>
++        <div class="wrap truth">
++          <span class="tag">Pourquoi un débutant peut survivre</span>
++          <h2>Les grosses apps ne veulent pas gérer le chaos familial à la main.</h2>
++          <p>Ce business est moins “scalable” au début, donc moins attirant pour les gros. Mais c’est justement ton avantage: confiance, patience, langue, accompagnement humain, adaptation à chaque famille. L’IA t’aide derrière, mais le client achète surtout une personne fiable.</p>
++          <div class="actions"><a class="btn btn-primary" href="https://wa.me/50940712070?text=Bonjour%20Ashvex%2C%20je%20veux%20lancer%20FamilyDesk.">Lancer FamilyDesk</a></div>
++        </div>
++      </section>
++    </main>
++
++    <footer><div class="wrap">ASHVEX FamilyDesk — assistant familial anti-paperasse pour familles qui s’occupent d’un parent âgé.</div></footer>
+   </body>
+ </html>
